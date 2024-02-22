@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-Segu</title>
+    <link rel="icon" type="image/png" href="./img/Logo.png">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        <img src="./img/Logo.png" alt="Segu Indumentaria" class="logo-img">
+        <h1 class="logo-nombre">Segu <br>Indumentaria</h1>
+      </a>
+    
+      <div class="container-icon">
+        <a class="boton-carrito" href="./carrito.html">
+          <div class="container-cart-icon">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-cart"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              />
+            </svg>
+            <div class="count-product">
+              <span id="contador-productos">0</span>
+            </div>
+          </div>
+        </a>  
+      </div>
+    </header>
+
+    <!--
+    <div class="promocion">
+      <h3>Para compras de 3 unidades o mas 10% de descuento</h3><br>
+    </div>
+  -->
+    <div class="contenedor-carrito">
+      <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
+
+      <div id="carrito-productos" class="carrito-productos disabled">
+      <!-- Esto se va a completar con el JS -->
+      </div>
+
+      <div id="carrito-acciones" class="carrito-acciones disabled">
+        <div class="carrito-acciones-izquierda">
+          <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+        </div>
+        <div class="carrito-acciones-derecha">
+          <div class="carrito-acciones-total">
+            <p>Total:</p>
+            <p id="total">$3000</p>
+          </div>
+          <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+        </div>
+      </div>
+  
+      <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+  
+    </div>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
