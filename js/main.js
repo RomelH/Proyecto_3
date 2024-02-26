@@ -198,3 +198,4 @@ botonCarrito.addEventListener("click",() => {
     actualizarCantidadProductoCarrito();
    // containerCartProduct.classList.toggle("hidden-cart");
 });
+
