@@ -230,6 +230,7 @@ header {
     background-color: transparent;
     color: red;
     cursor: pointer;
+    width: 2rem;
 }
 
 .carrito-acciones {
@@ -239,12 +240,25 @@ header {
 
 .carrito-acciones-vaciar {
     border: 0;
+    display: flex;
+    font-size: 16px;
     background-color: rgb(255, 225, 0);
     padding: 1rem;
     border-radius: 1rem;
-    color: black;
+    color: red;
     text-transform: uppercase;
     cursor: pointer;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.carrito-acciones-vaciar img{
+  border: 0;
+  width: 20px;
+  height: 20px;
+  stroke: #f00;
+  align-items: center;
 }
 
 .carrito-acciones-derecha {
@@ -253,6 +267,7 @@ header {
 
 .carrito-acciones-total {
     display: flex;
+    font-size: 16px;
     background-color: rgb(255, 225, 0);
     padding: 1rem;
     color: black;
@@ -264,6 +279,7 @@ header {
 
 .carrito-acciones-comprar {
     border: 0;
+    font-size: 16px;
     background-color: rgb(255, 225, 0);
     padding: 1rem;
     color: black;
@@ -271,6 +287,10 @@ header {
     cursor: pointer;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+
+.disabled {
+  display: none;
 }
 
 /* Main */
